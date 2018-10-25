@@ -5,7 +5,7 @@ var prefix = "-";
 
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "bc")) {
+            if (message.content.startsWith(prefix + "1bc")) {
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' '); 
@@ -27,7 +27,7 @@ var prefix = "-";
     if (message.guild) {
    let embed = new Discord.RichEmbed()
     let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.split(' ')[0] == prefix + '+bc') {
+if(message.content.split(' ')[0] == prefix + '2bc') {
     if (!args[1]) {
 message.channel.send("**bc <message>**");
 return;
@@ -52,7 +52,7 @@ return;
 
 }
 
-const adminprefix = "/";
+const adminprefix = "//";
 const devs = ['487727064192122880'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -80,9 +80,12 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 
 
 
+
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag} !`);
-                client.user.setActivity("QUIET BC",{type: 'WATCHING'});
+                client.user.setActivity("QUIET New",{type: 'WATCHING'});
 
 });
 
